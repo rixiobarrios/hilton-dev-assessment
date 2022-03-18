@@ -1,7 +1,7 @@
 import { Component } from "react";
 
 // to get api key: https://openweathermap.org/appid
-const API_KEY = "<insert your api key here>";
+const API_KEY = "f48712b85cefe06f49489db84236278d";
 
 interface CityWeatherProps {
   city: string;
