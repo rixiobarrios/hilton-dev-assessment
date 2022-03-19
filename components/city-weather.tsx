@@ -33,13 +33,16 @@ export class CityWeather extends Component<CityWeatherProps, CityWeatherState> {
     const { weatherResult } = this.state;
 
     return (
-      <div>
-        <h1>{city}</h1>
+      //I implemented a conditional statement to prevent the API from sending null data and crashing the app.
+      weatherResult && (
         <div>
-          Temperature: {KtoF(weatherResult.main.temp).toFixed(0)} &#8457;
+          <h1>{city}</h1>
+          <div>
+            Temperature: {KtoF(weatherResult.main.temp).toFixed(0)} &#8457;
+          </div>
+          <div>Description: {weatherResult.weather[0].description}</div>
         </div>
-        <div>Descripiton: {weatherResult.weather[0].description}</div>
-      </div>
+      )
     );
   }
 }
