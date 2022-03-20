@@ -28,7 +28,7 @@ export default function IndexPage() {
           />
           <button
             // adjusted button shape, color, text and added hover effect
-            className="border border-solid border-primary bg-primary hover:bg-blue-800 text-l font-bold text-white uppercase rounded-r-lg py-3 px-3 bg-primary"
+            className="text-l font-bold text-white uppercase border border-solid border-primary bg-primary hover:bg-blue-800 rounded-r-lg py-3 px-3 bg-primary"
             type="submit"
           >
             Submit
