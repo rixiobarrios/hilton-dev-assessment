@@ -13,14 +13,19 @@ export default function IndexPage() {
           setCity(formdata.get("city").toString());
         }}
       >
-        <span>Weather Search:</span>{" "}
+        <span className="text-xl font-medium text-gray-700">
+          Weather Search:
+        </span>{" "}
         <input
           data-testid="weather-input"
-          className="ml-2 border px-2 py-1 border-black"
+          className="border border-solid rounded-lg rounded-r-none py-3 px-3 ml-2"
           type="text"
           name="city"
         />
-        <button className="ml-2 text-sm border rounded-lg p-2" type="submit">
+        <button
+          className="border border-solid border-blue-500 bg-blue-500 hover:bg-blue-800 text-l font-bold text-white uppercase rounded-r-lg py-3 px-3 bg-primary"
+          type="submit"
+        >
           Submit
         </button>
       </form>
